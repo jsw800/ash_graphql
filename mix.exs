@@ -134,7 +134,7 @@ defmodule AshGraphql.MixProject do
       ],
       licenses: ["MIT"],
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*
-      CHANGELOG* documentation usage-rules.md),
+      CHANGELOG* documentation usage-rules.md usage-rules),
       links: %{
         "GitHub" => @source_url,
         "Discord" => "https://discord.gg/HTHRaaVPUc",
