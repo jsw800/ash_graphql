@@ -22,11 +22,15 @@ defmodule AshGraphql.MultiSchemaTest do
 
   test "each schema has its own AshTypes module" do
     # Schema A's AshTypes (OtherDomain is in the primary schema's domain list)
-    schema_a_types = Module.concat([AshGraphql.Test.Schema, AshGraphql.Test.OtherDomain, AshTypes])
+    schema_a_types =
+      Module.concat([AshGraphql.Test.Schema, AshGraphql.Test.OtherDomain, AshTypes])
+
     assert Code.ensure_loaded?(schema_a_types)
 
     # Schema B's AshTypes
-    schema_b_types = Module.concat([AshGraphql.Test.MultiSchema.SchemaB, AshGraphql.Test.OtherDomain, AshTypes])
+    schema_b_types =
+      Module.concat([AshGraphql.Test.MultiSchema.SchemaB, AshGraphql.Test.OtherDomain, AshTypes])
+
     assert Code.ensure_loaded?(schema_b_types)
 
     # They should be different modules

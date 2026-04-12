@@ -383,8 +383,7 @@ defmodule AshGraphql do
 
                 %{
                   schema_def
-                  | type_definitions:
-                      schema_def.type_definitions ++ new_types
+                  | type_definitions: schema_def.type_definitions ++ new_types
                 }
               end)
 
