@@ -11,6 +11,21 @@ See [Conventional Commits](Https://conventionalcommits.org) for commit guideline
 
 <!-- changelog -->
 
+## [v1.9.4](https://github.com/ash-project/ash_graphql/compare/v1.9.3...v1.9.4) (2026-04-12)
+
+
+
+
+### Bug Fixes:
+
+* Add missing usage_rules files to hex package by [@Munksgaard](https://github.com/Munksgaard) [(#429)](https://github.com/ash-project/ash_graphql/pull/429)
+
+* stabilize field ordering in embedded type inputs (#427) by Arjan Scherpenisse [(#427)](https://github.com/ash-project/ash_graphql/pull/427)
+
+* deduplicate structurally identical types in blueprint (#426) by biantaishabi2 [(#426)](https://github.com/ash-project/ash_graphql/pull/426)
+
+* scope AshTypes module to schema for multi-schema support (#424) by biantaishabi2 [(#424)](https://github.com/ash-project/ash_graphql/pull/424)
+
 ## [v1.9.3](https://github.com/ash-project/ash_graphql/compare/v1.9.2...v1.9.3) (2026-03-23)
 
 
